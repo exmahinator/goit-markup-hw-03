@@ -74,6 +74,7 @@
     letter-spacing: 0.03em;
     background-color: var(--body-background, #ffffff);
     color: var(--main-text, #757575);
+    margin: 0;
 }
 
 /* Reset unordered list */
@@ -86,6 +87,13 @@
 .link-reset {
     text-decoration: none;
     font-style: normal;
+}
+
+/* Common additional class - container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* --------------------------------------Index-------------------------------------- */
