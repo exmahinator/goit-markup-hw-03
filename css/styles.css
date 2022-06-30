@@ -24,6 +24,9 @@
     /* Right part of logo color in header */
     --header-logo: #000000;
 
+    /* Header grid color */
+    --header-grid: #ECECEC;
+
     /* Hero background color */
     --hero-background: #2F303A;
 
@@ -106,6 +109,12 @@ html {
     padding: 0 15px;
 }
 
+/* Sections */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* --------------------------------------Index-------------------------------------- */
 
 /* Header and navigation */
@@ -114,12 +123,13 @@ html {
     /* position: absolute; */
     width: 1600px;
     height: 80px;
-    left: 0px;
-    top: 0px;
+    /* left: 0px;
+    top: 0px; */
     display: flex;
     flex-basis: auto;
     justify-content: space-between;
-    outline: 3px solid red;
+    border-bottom: 1px solid var(--header-grid, #ECECEC);
+    outline: 5px solid red;
 }
 .logo-flex {
     position: absolute;
@@ -179,10 +189,13 @@ html {
 
 /* Hero */
 .hero {
+    width: 1600px;
+    height: 600px;
     background-color: var(--hero-background, #2F303A);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    outline: 5px solid lightgreen;
 }
 .hero-title {
     font-weight: 900;
@@ -207,9 +220,15 @@ html {
 }
 
 /* Our advantages */
-.advantages-title {
-    visibility: hidden;
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 5px solid red;
 }
+/* .advantages-title {
+    visibility: hidden;
+} */
 .advantages-accent {
     font-weight: 700;
     font-size: 14px;
@@ -219,6 +238,13 @@ html {
 }
 
 /* What we are doing */
+.we-do {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 5px solid lightgreen;
+}
+
 .performance-title, .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -230,6 +256,10 @@ html {
 /* Our team */
 .team {
     background-color: var(--team-background, #F5F4FA);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 5px solid red;
 }
 .team-members {
     background-color: var(--team-item, #ffffff);
@@ -247,6 +277,12 @@ html {
 /* Footer */
 .footer {
     background-color: var(--hero-background, #2F303A);
+    width: 1600px;
+    height: 252px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    outline: 5px solid lightgreen;
 }
 /* Logo footer*/
 .logo-footer {
