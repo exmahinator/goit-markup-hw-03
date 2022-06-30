@@ -120,7 +120,6 @@
     letter-spacing: 0.02em;
     color: var(--secondary-text, #212121);
 }
-
 .contacts-link {
     color: var(--main-text, #757575);
 }
@@ -128,6 +127,9 @@
 /* Hero */
 .hero {
     background-color: var(--hero-background, #2F303A);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .hero-title {
     font-weight: 900;
