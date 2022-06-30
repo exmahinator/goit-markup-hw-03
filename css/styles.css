@@ -110,21 +110,27 @@ html {
 
 /* Header and navigation */
 /* Logo header*/
-/* .page-header {
+.page-header {
+    /* position: absolute; */
+    width: 1600px;
     height: 80px;
     left: 0px;
     top: 0px;
     display: flex;
     flex-basis: auto;
-    align-items: center;
     justify-content: space-between;
-    max-width: 1600px;
-    padding-right: 215px;
-    padding-left: 215px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 24px 215px 25px 215px;
-} */
+    outline: 3px solid red;
+}
+.logo-flex {
+    position: absolute;
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
+    display: flex;
+    align-items: center;
+    outline: 3px solid red;
+}
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -139,6 +145,28 @@ html {
 }
 
 /* Navigation menu */
+.pages-flex {
+    position: absolute;
+    width: 294px;
+    height: 16px;
+    left: 453px;
+    margin: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 3px solid red;
+}
+.contacts-flex {
+    position: absolute;
+    width: 307px;
+    height: 16px;
+    left: 1078px;
+    margin: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 3px solid red;
+}
 .nav-link, .contacts-link {
     font-weight: 500;
     line-height: 1.14;
