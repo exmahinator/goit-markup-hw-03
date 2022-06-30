@@ -1,0 +1,260 @@
+/* Accent color, hero button color, left part of logo color: #2196F3 */
+/* Main text color: #757575 */
+/* Secondary text color: #212121 */
+/* Right part of logo color in header: #000000 */
+/* Right part of logo color in footer: #ffffff */
+/* Background color of Hero and Footer: #2F303A */
+/* Background color of overall body: #ffffff */
+/* Team section background color, portfolio button color: #F5F4FA */
+/* Footer address text color: rgba(255, 255, 255, 0.6) */
+
+:root {
+    /* Accent color, hero button color, left part of logo color, active state portfolio button */
+    --accent: #2196F3;
+
+    /* Main text color */
+    --main-text: #757575;
+
+    /* Secondary text color */
+    --secondary-text: #212121;
+
+    /* Main body color */
+    --body-background: #ffffff;
+
+    /* Right part of logo color in header */
+    --header-logo: #000000;
+
+    /* Hero background color */
+    --hero-background: #2F303A;
+
+    /* Hero header and button text color */
+    --hero-text: #ffffff;
+
+    /* Hero button hover and focus background color */
+    --hero-state-background: #F5F4FA;
+
+    /* Hero button hover and focus text color */
+    --hero-state-text: #212121;
+
+    /* Team section background color */
+    --team-background: #F5F4FA;
+
+    /* Team item background color */
+    --team-item: #ffffff;
+
+    /* Portfolio button background color */
+    --portfolio-button: #F5F4FA;
+
+    /* Portfolio button hover and focus text color */
+    --portfolio-state: #ffffff;
+
+    /* Portfolio item background color */
+    --portfolio-item: #ffffff;
+    
+    /* Footer background */
+    --footer-background: #2F303A;
+
+    /* Right part of logo color in footer */
+    --footer-logo: #ffffff;
+    
+    /* Footer text color */
+    --footer-text: #ffffff;
+
+    /* Footer text transparent color */
+    --footer-transparent: rgba(255,255,255,0.6);
+
+}
+
+/* Body */
+.body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background-color: var(--body-background, #ffffff);
+    color: var(--main-text, #757575);
+}
+
+/* Reset unordered list */
+.list-reset {
+    list-style: none;
+    padding-left: 0px;
+}
+
+/* Reset link */
+.link-reset {
+    text-decoration: none;
+    font-style: normal;
+}
+
+/* --------------------------------------Index-------------------------------------- */
+
+/* Header and navigation */
+/* Logo header*/
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;  
+}
+.logo-header {
+    color: var(--header-logo, #000000);
+}
+.logo-accent {
+    color: var(--accent, #2196F3);
+}
+
+/* Navigation menu */
+.nav-link, .contacts-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text, #212121);
+}
+
+.contacts-link {
+    color: var(--main-text, #757575);
+}
+
+/* Hero */
+.hero {
+    background-color: var(--hero-background, #2F303A);
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-text, #ffffff);
+}
+.hero-button {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--accent, #2196F3);
+    color: var(--hero-text, #ffffff);
+}
+
+/* Our advantages */
+.advantages-title {
+    visibility: hidden;
+}
+.advantages-accent {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-text, #212121);
+}
+
+/* What we are doing */
+.performance-title, .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--secondary-text, #212121);
+}
+
+/* Our team */
+.team {
+    background-color: var(--team-background, #F5F4FA);
+}
+.team-members {
+    background-color: var(--team-item, #ffffff);
+}
+.members-name, .members-title {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+.members-name {
+    font-weight: 500;
+    color: var(--secondary-text, #212121);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--hero-background, #2F303A);
+}
+/* Logo footer*/
+.logo-footer {
+    color: var(--footer-logo, #ffffff);
+}
+.address-link {
+    line-height: 1.71;
+    color: var(--footer-text, #ffffff);
+}
+.address-transparent {
+    color: var(--footer-transparent, rgba(255,255,255,0.6))
+}
+
+/* --------------------------------------Portfolio-------------------------------------- */
+
+.portfolio-title {
+    visibility: hidden;
+}
+.portfolio-button {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    background-color: var(--portfolio-button, #F5F4FA);
+    color: var(--secondary-text, #212121);
+}
+.portfolio-item {
+    background-color: var(--portfolio-item, #ffffff);
+}
+.portfolio-company {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text, #212121);
+}
+.portfolio-product {
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+/* --------------------------------------States-------------------------------------- */
+/* Between those comments will be "visited" state for links */
+/* Between those comments will be "visited" state for links */
+
+/* Hover, focus */
+.nav-link:hover, .nav-link:focus, .contacts-link:hover, .contacts-link:focus, .address-link:hover, .address-link:focus {
+    color: var(--accent, #2196F3);
+}
+
+/* Between those comments will be "active" state for links */
+.current-active {
+    color: var(--accent, #2196F3);
+}
+/* Between those comments will be "active" state for links */
+
+/* Between those comments will be "visited" state for buttons */
+/* Between those comments will be "visited" state for buttons */
+
+/* Hover, focus */
+.hero-button:hover, .hero-button:focus {
+    background-color: var(--hero-state-background, #F5F4FA);
+    color: var(--hero-state-text, #212121);
+}
+
+.portfolio-button:hover, .portfolio-button:focus {
+    background-color: var(--accent, #2196F3);
+    color: var(--portfolio-state, #ffffff);
+}
+
+/* Between those comments will be "active" state for buttons */
+/* Between those comments will be "active" state for buttons */
