@@ -77,7 +77,6 @@
     letter-spacing: 0.03em;
     background-color: var(--body-background, #ffffff);
     color: var(--main-text, #757575);
-    margin: 0 auto;
 }
 
 /* Reset unordered list */
