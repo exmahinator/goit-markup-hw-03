@@ -68,16 +68,6 @@
 
 }
 
-/* Normalize */
-html {
-    box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
 /* Body */
 .body {
     font-family: 'Roboto', sans-serif;
@@ -87,7 +77,7 @@ html {
     letter-spacing: 0.03em;
     background-color: var(--body-background, #ffffff);
     color: var(--main-text, #757575);
-    margin: 0;
+    margin: 0 auto;
 }
 
 /* Reset unordered list */
@@ -104,9 +94,7 @@ html {
 
 /* Common additional class - container */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    width: 1200px;
 }
 
 /* Sections */
@@ -119,84 +107,42 @@ html {
 
 /* Header and navigation */
 /* Logo header*/
-.page-header {
-    /* position: absolute; */
-    width: 1600px;
-    height: 80px;
-    /* left: 0px;
-    top: 0px; */
-    display: flex;
-    flex-basis: auto;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--header-grid, #ECECEC);
-    outline: 5px solid red;
-}
-.logo-flex {
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
-    display: flex;
-    align-items: center;
-    outline: 3px solid red;
+.header {
+    border-bottom: 1px solid var(--header-grid, #ececec);
 }
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;  
+    line-height: 1.19;
 }
+
 .logo-header {
     color: var(--header-logo, #000000);
 }
+
 .logo-accent {
     color: var(--accent, #2196F3);
 }
 
 /* Navigation menu */
-.pages-flex {
-    position: absolute;
-    width: 294px;
-    height: 16px;
-    left: 453px;
-    margin: 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    outline: 3px solid red;
-}
-.contacts-flex {
-    position: absolute;
-    width: 307px;
-    height: 16px;
-    left: 1078px;
-    margin: 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    outline: 3px solid red;
-}
-.nav-link, .contacts-link {
+.nav-link,
+.contacts-link {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-text, #212121);
 }
+
 .contacts-link {
     color: var(--main-text, #757575);
 }
 
 /* Hero */
 .hero {
-    width: 1600px;
-    height: 600px;
     background-color: var(--hero-background, #2F303A);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    outline: 5px solid lightgreen;
 }
+
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -206,6 +152,7 @@ html {
     text-transform: uppercase;
     color: var(--hero-text, #ffffff);
 }
+
 .hero-button {
     font-family: inherit;
     cursor: pointer;
@@ -220,15 +167,10 @@ html {
 }
 
 /* Our advantages */
-.advantages {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    outline: 5px solid red;
-}
-/* .advantages-title {
+.advantages-title {
     visibility: hidden;
-} */
+}
+
 .advantages-accent {
     font-weight: 700;
     font-size: 14px;
@@ -238,14 +180,8 @@ html {
 }
 
 /* What we are doing */
-.we-do {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    outline: 5px solid lightgreen;
-}
-
-.performance-title, .team-title {
+.performance-title,
+.team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -256,19 +192,19 @@ html {
 /* Our team */
 .team {
     background-color: var(--team-background, #F5F4FA);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    outline: 5px solid red;
 }
+
 .team-members {
     background-color: var(--team-item, #ffffff);
 }
-.members-name, .members-title {
+
+.members-name,
+.members-title {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
 }
+
 .members-name {
     font-weight: 500;
     color: var(--secondary-text, #212121);
@@ -277,23 +213,20 @@ html {
 /* Footer */
 .footer {
     background-color: var(--hero-background, #2F303A);
-    width: 1600px;
-    height: 252px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    outline: 5px solid lightgreen;
 }
+
 /* Logo footer*/
 .logo-footer {
     color: var(--footer-logo, #ffffff);
 }
+
 .address-link {
     line-height: 1.71;
     color: var(--footer-text, #ffffff);
 }
+
 .address-transparent {
-    color: var(--footer-transparent, rgba(255,255,255,0.6))
+    color: var(--footer-transparent, rgba(255, 255, 255, 0.6))
 }
 
 /* --------------------------------------Portfolio-------------------------------------- */
@@ -301,6 +234,7 @@ html {
 .portfolio-title {
     visibility: hidden;
 }
+
 .portfolio-button {
     font-family: inherit;
     cursor: pointer;
@@ -311,9 +245,11 @@ html {
     background-color: var(--portfolio-button, #F5F4FA);
     color: var(--secondary-text, #212121);
 }
+
 .portfolio-item {
     background-color: var(--portfolio-item, #ffffff);
 }
+
 .portfolio-company {
     font-weight: 700;
     font-size: 18px;
@@ -321,6 +257,7 @@ html {
     letter-spacing: 0.06em;
     color: var(--secondary-text, #212121);
 }
+
 .portfolio-product {
     font-size: 16px;
     line-height: 1.88;
@@ -331,7 +268,12 @@ html {
 /* Between those comments will be "visited" state for links */
 
 /* Hover, focus */
-.nav-link:hover, .nav-link:focus, .contacts-link:hover, .contacts-link:focus, .address-link:hover, .address-link:focus {
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus,
+.address-link:hover,
+.address-link:focus {
     color: var(--accent, #2196F3);
 }
 
@@ -339,18 +281,21 @@ html {
 .current-active {
     color: var(--accent, #2196F3);
 }
+
 /* Between those comments will be "active" state for links */
 
 /* Between those comments will be "visited" state for buttons */
 /* Between those comments will be "visited" state for buttons */
 
 /* Hover, focus */
-.hero-button:hover, .hero-button:focus {
+.hero-button:hover,
+.hero-button:focus {
     background-color: var(--hero-state-background, #F5F4FA);
     color: var(--hero-state-text, #212121);
 }
 
-.portfolio-button:hover, .portfolio-button:focus {
+.portfolio-button:hover,
+.portfolio-button:focus {
     background-color: var(--accent, #2196F3);
     color: var(--portfolio-state, #ffffff);
 }
