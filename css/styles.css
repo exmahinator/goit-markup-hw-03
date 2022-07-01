@@ -82,7 +82,8 @@
 /* Reset unordered list */
 .list-reset {
     list-style: none;
-    padding-left: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 /* Reset link */
@@ -93,7 +94,10 @@
 
 /* Common additional class - container */
 .container {
-    width: 1200px;
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
 /* Sections */
@@ -140,16 +144,17 @@
 /* Hero */
 .hero {
     background-color: var(--hero-background, #2F303A);
+    text-align: center;
 }
 
 .hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-text, #ffffff);
+    margin-bottom: 30px;
 }
 
 .hero-button {
@@ -158,11 +163,12 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     background-color: var(--accent, #2196F3);
     color: var(--hero-text, #ffffff);
+    min-width: 200px;
+    border-radius: 4px;
+    padding: 10px 32px;
 }
 
 /* Our advantages */
