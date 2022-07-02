@@ -69,6 +69,7 @@
 }
 
 /* Body */
+
 .body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -80,6 +81,7 @@
 }
 
 /* Reset unordered list */
+
 .list-reset {
     list-style: none;
     padding: 0;
@@ -87,12 +89,21 @@
 }
 
 /* Reset link */
+
 .link-reset {
     text-decoration: none;
     font-style: normal;
 }
 
+/* Reset title */
+
+.title-reset {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 /* Common additional class - container */
+
 .container {
     width: 1230px;
     padding-left: 15px;
@@ -101,18 +112,31 @@
 }
 
 /* Sections */
+
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+/* Removing gap between pictures in li elements */
+.item-no-gap {
+    font-size: 0;
 }
 
 /* --------------------------------------Index-------------------------------------- */
 
 /* Header and navigation */
 /* Logo header*/
+
 .header {
     border-bottom: 1px solid var(--header-grid, #ececec);
 }
+
+.header-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -129,6 +153,7 @@
 }
 
 /* Navigation menu */
+
 .nav-link,
 .contacts-link {
     font-weight: 500;
@@ -142,9 +167,15 @@
 }
 
 /* Hero */
+
 .hero {
     background-color: var(--hero-background, #2F303A);
     text-align: center;
+}
+
+.hero-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -172,19 +203,24 @@
 }
 
 /* Our advantages */
+
 .advantages-title {
     visibility: hidden;
+    margin-bottom: 50px;
 }
 
-.advantages-accent {
+.advantages-subtitle {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--secondary-text, #212121);
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 /* What we are doing */
+
 .performance-title,
 .team-title {
     font-weight: 700;
@@ -192,37 +228,60 @@
     line-height: 1.16;
     text-align: center;
     color: var(--secondary-text, #212121);
+    margin-bottom: 50px;
 }
 
 /* Our team */
 .team {
     background-color: var(--team-background, #F5F4FA);
+    text-align: center;
 }
 
 .team-members {
     background-color: var(--team-item, #ffffff);
+    padding-top: 0;
+    padding-bottom: 30px
 }
 
 .members-name,
 .members-title {
     font-size: 16px;
     line-height: 1.18;
-    text-align: center;
+    margin-top: 0;
 }
 
 .members-name {
     font-weight: 500;
     color: var(--secondary-text, #212121);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.members-title {
+    margin-bottom: 0;
 }
 
 /* Footer */
 .footer {
     background-color: var(--hero-background, #2F303A);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 /* Logo footer*/
 .logo-footer {
     color: var(--footer-logo, #ffffff);
+}
+
+.address-list {
+    margin-top: 20px;
+}
+
+.address-item {
+    margin: 0 0 9px 0;
+}
+
+.address-item:last-child {
+    margin-bottom: 0;
 }
 
 .address-link {
@@ -240,7 +299,13 @@
     visibility: hidden;
 }
 
+.button-block {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
 .portfolio-button {
+    min-width: 73px;
     font-family: inherit;
     cursor: pointer;
     font-weight: 500;
@@ -249,10 +314,13 @@
     text-align: center;
     background-color: var(--portfolio-button, #F5F4FA);
     color: var(--secondary-text, #212121);
+    border-radius: 4px;
 }
 
 .portfolio-item {
     background-color: var(--portfolio-item, #ffffff);
+    padding-top: 0;
+    padding-bottom: 20px;
 }
 
 .portfolio-company {
@@ -261,11 +329,20 @@
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--secondary-text, #212121);
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 
 .portfolio-product {
     font-size: 16px;
     line-height: 1.88;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.portfolio-company, .portfolio-product {
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 /* --------------------------------------States-------------------------------------- */
@@ -273,6 +350,7 @@
 /* Between those comments will be "visited" state for links */
 
 /* Hover, focus */
+
 .nav-link:hover,
 .nav-link:focus,
 .contacts-link:hover,
