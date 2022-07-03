@@ -237,6 +237,7 @@
     letter-spacing: 0.06em;
     background-color: var(--accent, #2196F3);
     color: var(--hero-text, #ffffff);
+    border-color: transparent;
 
     cursor: pointer;
 }
@@ -403,6 +404,7 @@
     background-color: var(--portfolio-button, #F5F4FA);
     color: var(--secondary-text, #212121);
     text-align: center;
+    border-color: transparent;
 
     cursor: pointer;
 }
