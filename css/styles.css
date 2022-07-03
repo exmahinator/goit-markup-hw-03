@@ -121,11 +121,6 @@
     padding-bottom: 94px;
 }
 
-/* Removing gap between pictures in li elements */
-.item-no-gap {
-    font-size: 0;
-}
-
 /* --------------------------------------Index-------------------------------------- */
 
 /* Header and navigation */
@@ -234,6 +229,10 @@
     margin-bottom: 50px;
 }
 
+.we-do-image {
+    display: block;
+}
+
 /* Our team */
 .team {
     background-color: var(--team-background, #F5F4FA);
@@ -244,6 +243,10 @@
     background-color: var(--team-item, #ffffff);
     padding-top: 0;
     padding-bottom: 30px
+}
+
+.members-photo {
+    display: block;
 }
 
 .members-name,
@@ -326,6 +329,10 @@
     padding-bottom: 20px;
     margin: 30px;
     border-bottom: 1px solid var(--portfolio-item-border, #eeeeee);
+}
+
+.portfolio-image {
+    display: block;
 }
 
 .portfolio-company {
