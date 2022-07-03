@@ -352,6 +352,9 @@
 
 /* Logo footer*/
 .logo-footer {
+    padding-top: 0;
+    padding-bottom: 0;
+
     color: var(--footer-logo, #ffffff);
 }
 
