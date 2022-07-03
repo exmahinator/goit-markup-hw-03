@@ -207,6 +207,8 @@
 .hero {
     background-color: var(--hero-background, #2F303A);
     text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .hero-container {
