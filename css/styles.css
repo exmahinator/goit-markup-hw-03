@@ -108,9 +108,7 @@
 /* Common additional class - container */
 
 .container {
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -119,6 +117,8 @@
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* --------------------------------------Index-------------------------------------- */
@@ -217,7 +217,8 @@
 }
 
 .hero-title {
-    margin-bottom: 30px;
+    width: 690px;
+    margin: 0 auto 30px;
 
     font-weight: 900;
     font-size: 44px;
@@ -250,8 +251,15 @@
     display: flex;
 }
 
-.advantages-item + .advantages-item {
-    margin-left: 30px;
+.advantages-item {
+    /* 100% - 120px because there is additional 15px padding in section,
+    so instead of 30*3 margin between items there will be 30*3 + 30px padding (right + left) */
+    width: calc((100% - 120px) / 4);
+    margin-right: 30px;
+}
+
+.advantages-item:nth-child(4n) {
+    margin-right: 0;
 }
 
 .advantages-title {
@@ -268,6 +276,11 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--secondary-text, #212121);
+}
+
+.advantages-paragraph {
+    margin: 0;
+    margin-top: 10px;
 }
 
 /* What we are doing */
@@ -293,8 +306,15 @@
     color: var(--secondary-text, #212121);
 }
 
-.we-do-item + .we-do-item{
-    margin-left: 30px;
+.we-do-item {
+    /* 100% - 120px because there is additional 15px padding in section,
+    so instead of 30*2 margin between items there will be 30*3 + 30px padding (right + left) */
+    width: calc((100% - 90px) / 3);
+    margin-right: 30px;
+}
+
+.we-do-item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .we-do-image {
@@ -312,15 +332,21 @@
 }
 
 .team-members {
+    width: calc((100% - 120) / 4);
+    margin-right: 30px;
     padding-top: 0;
     padding-bottom: 30px;
 
     background-color: var(--team-item, #ffffff);
 }
 
-.team-members + .team-members {
-    margin-left: 30px;
+.team-members:nth-child(4n) {
+    margin-right: 0;
 }
+
+/* .team-members + .team-members {
+    margin-left: 30px;
+} */
 
 .members-photo {
     display: block;
@@ -421,18 +447,11 @@
 }
 
 .portfolio-item {
-    /* 100% father's width - 90px (2x margin and additional 30px because width of containers is 370px instead of 380px,
-    but we need to fill father's container what is 1200px, so if 380*3 = 1140 and 2x margins is 30px it will be 1200px,
-    but if child's container is 370px it will be 370*3 = 1110px, 2x margins between 3 items - 30px + 30px, so there is extra 30px,
-    what will be added as extra margin, but we don't need it, so that's why 90px instead of 60px) divided on 3, because we need only 3
-    elements in 1 line accordingly to model */
     width: calc((100% - 90px) / 3);
     padding-top: 0;
-    padding-bottom: 20px;
     margin-right: 30px;
     margin-bottom: 30px;
 
-    border-bottom: 1px solid var(--portfolio-item-border, #eeeeee);
     background-color: var(--portfolio-item, #ffffff);
 }
 
@@ -444,13 +463,21 @@
     margin-bottom: 0;
 }
 
+.portfolio-summary {
+    padding: 20px 0 20px 24px;
+    width: 370px;
+
+    border-right: 1px solid var(--portfolio-item-border);
+    border-bottom: 1px solid var(--portfolio-item-border);
+    border-left: 1px solid var(--portfolio-item-border);
+}
+
 .portfolio-image {
     display: block;
 }
 
 .portfolio-company {
-    margin-top: 20px;
-    margin-bottom: 4px;
+    margin: 0;
 
     font-weight: 700;
     font-size: 18px;
@@ -460,19 +487,14 @@
 }
 
 .portfolio-product {
-    margin-top: 0;
+    margin-top: 4px;
     margin-bottom: 0;
 
     font-size: 16px;
     line-height: 1.88;
 }
 
-.portfolio-company, .portfolio-product {
-    padding-left: 24px;
-    /* Put "padding-right: auto, because in 2nd element of model the subtitle is too long and it can't be "diminished"
-        and because of that it break through it's container what breaks grid */
-    padding-right: auto;
-}
+
 
 /* --------------------------------------States-------------------------------------- */
 /* Between those comments will be "visited" state for links */
