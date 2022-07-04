@@ -421,6 +421,8 @@
 }
 
 .portfolio-button {
+    display: block;
+    padding: 6px 22px 6px 22px;
     border-radius: 4px;
     min-width: 73px;
 
