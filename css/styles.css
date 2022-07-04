@@ -473,7 +473,7 @@
 }
 
 .portfolio-summary {
-    padding: 20px 0 20px 24px;
+    padding: 20px 24px 20px 24px;
     width: 370px;
 
     border-right: 1px solid var(--portfolio-item-border);
@@ -491,7 +491,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
     color: var(--secondary-text, #212121);
 }
 
